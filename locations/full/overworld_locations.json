@@ -1,0 +1,720 @@
+﻿[
+	// Sword of Wind
+	{
+		"name": "Leaf Village",
+		"access_rules": [
+			""
+		],
+		"sections": [
+			{
+				"name": "Leaf Elder",
+				"visibility_rules": [ "flag_sk" ],
+                "item_count": 1
+			},
+			{
+				"name": "Zebu's Pupil",
+				"visibility_rules": [ "flag_sk" ],
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"x": 520,
+				"y": 1464
+			}
+		]
+	},
+	
+	// Windmill Key
+	{
+		"name": "Windmill Guard",
+		"access_rules": [
+			"alarm"
+		],
+		"sections": [
+			{
+				"name": "Talk to Zebu first",
+				"visibility_rules": [ "flag_sk" ],
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"x": 520,
+				"y": 1176
+			}
+		]
+	},
+	
+	// Refresh
+	{
+		"name": "Refresh",
+		"access_rules": [
+			"windmill"
+		],
+		"sections": [
+			{
+				"name": "Activate Windmill",
+				"visibility_rules": [ "flag_sm" ],
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"x": 258,
+				"y": 1194
+			}
+		]
+	},
+
+	// Statue of Onyx
+	{
+		"name": "Item in grass",
+		"access_rules": [
+			"$canAccessBrynmaer"
+		],
+		"sections": [
+			{
+				"name": "Walk on bridge first",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"visibility_rules": [ "flag_sk" ],
+				"x": 520,
+				"y": 764
+			}
+		]
+	},
+	
+	// Gas Mask
+	{
+		"name": "Akahana",
+		"access_rules": [
+			"$hasAkahanaItem,$canAccessBrynmaer"
+		],
+		"sections": [
+			{
+				"name": "Give him Statue of Onyx",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"visibility_rules": [ "flag_sk" ],
+				"x": 54,
+				"y": 759
+			}
+		]
+	},
+	
+	// Telepathy
+	{
+		"name": "Tornel at Stom's House",
+		"access_rules": [
+			"$canAccessOak"
+		],
+		"sections": [
+			{
+				"name": "Visit Oak first",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"visibility_rules": [ "flag_sm" ],
+				"x": 518,
+				"y": 544
+			}
+		]
+	},	
+
+	// Sword of Fire
+	// Insect Flute
+	{
+		"name": "Talk to Mom and save Piglet OR kill Insect",
+		"access_rules": [
+			"$canAccessOak,telepathy"
+		],
+		"sections": [
+			{
+				"name": "Mom",
+                "item_count": 1
+			},
+			{
+				"name": "Oak Elder",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"visibility_rules": [ "flag_sk" ],
+				"x": 916,
+				"y": 912
+			}
+		]
+	},
+
+	// Ball of Fire
+	{
+		"name": "Insect Boss",
+		"access_rules": [
+			"$canAccessOak,insect,$canKillInsect"
+		],
+		"sections": [
+			{
+				"name": "Use Insect Flute at dead end",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sk" ],
+				"map": "map_full",
+				"x": 1016,
+				"y": 912
+			}
+		]
+	},
+	
+	// Paralysis
+	{
+		"name": "Paralysis",
+		"access_rules": [
+			"$canAccessPortoa,flight",
+			"$canAccessSabreNorth,flight,$canKillKelbesque,prison",
+			"$canAccessSabreNorth,$canBreakIceWalls,$canKillKelbesque,prison"
+		],
+		"sections": [
+			{
+				"name": "Free Lunch (for now)",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sm" ],
+				"map": "map_full",
+				"x": 1208,
+				"y": 854
+			}
+		]
+	},
+
+	// Flute of Lime (Queen of Portoa)
+	{
+		"name": "Queen of Portoa",
+		"access_rules": [
+			"$canAccessPortoa,flag_gt",
+			"$canAccessPortoa,paralysis"
+		],
+		"sections": [
+			{
+				"name": "Enter back room first",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sk" ],
+				"map": "map_full",
+				"x": 1150,
+				"y": 1176
+			}
+		]
+	},
+
+	// Sword of Water
+	// Flute of Lime #2
+	// Shield Ring
+	// Waterfall Mimic
+	{
+		"name": "Waterfall Cave",
+		"access_rules": [
+			"$canAccessPortoa,$canBreakIceWalls"
+		],
+		"sections": [
+			{
+				"name": "River Chests",
+				"visibility_rules": [ "flag_sk" ],
+				"access_rules": [ "flag_gt","lime" ],
+                "item_count": 2
+			},
+			{
+				"name": "Akahana",
+				"visibility_rules": [ "flag_sk" ],
+				"access_rules": [ "lime" ],
+                "item_count": 1
+			},
+			{
+				"name": "Mimic",
+				"visibility_rules": [ "flag_st" ],
+                "item_count": 1
+			}
+
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"x": 1624,
+				"y": 996
+			}
+		]
+	},
+	
+	// Kirisa Plant
+	{
+		"name": "Portoa Area",
+		"access_rules": [
+			"$canAccessPortoa,$canCrossRivers,$canBreakStoneWalls"
+		],
+		"sections": [
+			{
+				"visibility_rules": [ "flag_sk" ],
+				"name": "Kirisa Plant",
+                "item_count": 1
+			},
+			{
+				"visibility_rules": [ "flag_sc" ],
+				"name": "Antidote",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"x": 1644,
+				"y": 1426
+			}
+		]
+	},
+
+	// Ball of Water
+	{
+		"name": "Lime Tree",
+		"access_rules": [
+			"$canAccessPortoa,water"
+		],
+		"sections": [
+			{
+				"name": "Rage",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sk" ],
+				"map": "map_full",
+				"x": 966,
+				"y": 1252
+			}
+		]
+	},
+
+	// Blizzard Bracelet
+	{
+		"name": "Amazones",
+		"access_rules": [
+			"$canAccessAmazones,flag_gt",
+			"$canAccessAmazones,paralysis",
+			"$canAccessAmazones,change"
+		],
+		"sections": [
+			{
+				"name": "Storage Room",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sk" ],
+				"map": "map_full",
+				"x": 580,
+				"y": 1014
+			}
+		]
+	},
+
+	// Bow of Moon
+	{
+		"name": "Queen Aryllis",
+		"access_rules": [
+			"$canAccessAmazones,change,$hasQueenItem"
+		],
+		"sections": [
+			{
+				"name": "Change to woman and give Kirisa Plant",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sk" ],
+				"map": "map_full",
+				"x": 462,
+				"y": 1014
+			}
+		]
+	},
+	
+	// Eyeglasses
+	{
+		"name": "Clark Kent's hideout",
+		"access_rules": [
+			"$canAccessZombieTown,$canKillSabera"
+		],
+		"sections": [
+			{
+				"name": "Kill Sabera first",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sk" ],
+				"map": "map_full",
+				"x": 1550,
+				"y": 174
+			}
+		]
+	},
+	
+	// Recover
+	{
+		"name": "Recover",
+		"access_rules": [
+			"$canAccessPortoa,$canTriggerMesia,$canCrossRivers"
+		],
+		"sections": [
+			{
+				"name": "Talk to Mesia & go behind throne room",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sm" ],
+				"map": "map_full",
+				"x": 1414,
+				"y": 1132
+			}
+		]
+	},
+	
+	// Shell Flute
+	{
+		"name": "Dolphin",
+		"access_rules": [
+			"$canAccessPortoa,$canTriggerMesia,$canCrossRivers"
+		],
+		"sections": [
+			{
+				"name": "Talk to Asina, give dolphin an herb",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"visibility_rules": [ "flag_sk" ],
+				"x": 1414,
+				"y": 1024
+			}
+		]
+	},
+		
+	// Love Pendant
+	{
+		"name": "Portoa Waterway",
+		"access_rules": [
+			"$canAccessJoel"
+		],
+		"sections": [
+			{
+				"name": "Swim / Fly along north wall",
+				"visibility_rules": [ "flag_sk" ],
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"x": 1414,
+				"y": 916
+			}
+		]
+	},
+	
+	// Glowing Lamp
+	{
+		"name": "Lighthouse",
+		"access_rules": [
+			"$canAccessJoel,glasses,alarm"
+		],
+		"sections": [
+			{
+				"name": "Use Eyeglasses in Joel shed, use Alarm Flute on Kensu",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sk" ],
+				"map": "map_full",
+				"x": 1624,
+				"y": 764
+			}
+		]
+	},
+	
+	// Barrier
+	{
+		"name": "Barrier",
+		"access_rules": [
+			"$canAccessBarrier"
+		],
+		"sections": [
+			{
+				"name": "Use Glowing Lamp & place statue on pedestal",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sm" ],
+    			"map": "map_full",
+				"x": 1434,
+				"y": 280
+			}
+		]
+	},
+	
+	// Change
+	{
+		"name": "Change",
+		"access_rules": [
+			"$canAccessSwan,paralysis,$hasKensuItem"
+		],
+		"sections": [
+			{
+				"name": "Talk to Stom, Paralyze Kensu x2, give Love Pendant",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "flag_sm" ],
+				"map": "map_full",
+				"x": 1338,
+				"y": 104
+			}
+		]
+	},
+	
+	// Key to Stxy
+	{
+		"name": "Shyron",
+		"access_rules": [
+			"$canAccessShyron"
+		],
+		"sections": [
+			{
+				"name": "Talk to Zebu",
+				"visibility_rules": [ "flag_sk" ],
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"x": 56,
+				"y": 554
+			}
+		]
+	},
+
+	// Ball of Thunder
+	{
+		"name": "Mado (use Water)",
+		"access_rules": [
+			"$canAccessGoa,thunder,$canCrossRivers,$canKillMado"
+		],
+		"sections": [
+			{
+				"name": "Enter Goa w/ Thunder to trigger massacre",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"visibility_rules": [ "flag_sk" ],
+				"x": 152,
+				"y": 554
+			}
+		]
+	},
+	
+	// Warrior Ring
+	{
+		"name": "Aka'migo",
+		"access_rules": [
+			"$canAccessGoa,ivory,change"
+		],
+		"sections": [
+			{
+				"name": "Change into Akahana",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"visibility_rules": [ "flag_sk" ],
+				"x": 912,
+				"y": 154
+			}
+		]
+	},
+	
+	// Stxy
+	// Sword of Thunder
+	// Psycho Shield
+	{
+		"name": "Stxy",
+		"access_rules": [
+			"$canAccessStxy"
+		],
+		"sections": [
+			{
+				"name": "Sword of Thunder",
+				"visibility_rules": [ "flag_sk" ],
+				"access_rules": [ "flag_sk","$sk_off,flight" ],
+                "item_count": 1
+			},
+			{
+				"name": "Medical Herb",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			},
+			{
+				"name": "West Mimic",
+				"visibility_rules": [ "flag_st" ],
+                "item_count": 1
+			},
+			{
+				"name": "Psycho Shield",
+				"visibility_rules": [ "flag_sk" ],
+				"access_rules": [ "flight" ],
+                "item_count": 1
+			},
+			{
+				"name": "East Mimic 1",
+				"visibility_rules": [ "flag_st" ],
+				"access_rules": [ "flight" ],
+                "item_count": 1
+			},
+			{
+				"name": "East Mimic 2",
+				"visibility_rules": [ "flag_st" ],
+				"access_rules": [ "flight" ],
+                "item_count": 1
+			},
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"x": 104,
+				"y": 296
+			}
+		]
+	},
+	
+	// Deo's Pendant
+	{
+		"name": "Bunny Field",
+		"access_rules": [
+			"$canAccessSahara,change,telepathy",
+			"$canAccessSahara,change,$rrOff"
+		],
+		"sections": [
+			{
+				"name": "Change to Stom, talk to Deo",
+                "item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"visibility_rules": [ "flag_sk" ],
+				"x": 1176,
+				"y": 352
+			}
+		]
+	},
+	
+	// Big Pyramid
+	// Bow of Truth
+	// Psycho Armor
+	{
+		"name": "Big Pyramid",
+		"access_rules": [
+			"flight,$canAccessSahara"
+		],
+		"sections": [
+			{
+				"name": "Magic Ring",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			},
+			{
+				"name": "Draygon 1",
+				"visibility_rules": [ "flag_sk" ],
+				"access_rules": [ "$hasSword" ],
+				"item_count": 2
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"x": 1214,
+				"y": 630
+			}
+		]
+	},
+	
+	// Small Pyramid
+	{
+		"name": "Small Pyramid",
+		"access_rules": [
+			"flight,$canAccessSahara,moon,sun"
+		],
+		"sections": [
+			{
+				"name": "Opel Statue",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			},
+			{
+				"name": "Mimic",
+				"visibility_rules": [ "flag_st" ],
+				"item_count": 1
+			}
+		],
+		"map_locations": [
+			{
+				"map": "map_full",
+				"x": 1134,
+				"y": 540
+			}
+		]
+	}
+]

@@ -1,0 +1,187 @@
+﻿[
+	{
+		"name": "Sealed Cave 1",
+		"access_rules": [
+			"windmill","$canAccessBrynmaer,$canBreakStoneWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_sealed_cave",
+				"x": 510,
+				"y": 518
+			},
+			{
+				"map": "map_full",
+				"x": 312,
+				"y": 983
+			}
+		],
+		"sections": [
+			{
+				"name": "Ball of Wind",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+
+	{
+		"name": "Sealed Cave 2",
+		"access_rules": [
+			"$canAccessBrynmaer,$canBreakStoneWalls","windmill,$canBreakStoneWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_sealed_cave",
+				"x": 400,
+				"y": 80
+			}
+		],
+		"sections": [
+			{
+				"name": "Vampire",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+
+	{
+		"name": "Sealed Cave 3",
+		"access_rules": [
+			"windmill","$canAccessBrynmaer,$canBreakStoneWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_sealed_cave",
+				"x": 356,
+				"y": 208
+			},
+			{
+				"map": "map_full",
+				"x": 312,
+				"y": 983
+			}
+		],
+		"sections": [
+			{
+				"name": "Warp Boots",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+
+	{
+		"name": "Sealed Cave 4",
+		"access_rules": [
+			"windmill","$canAccessBrynmaer,$canBreakStoneWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_sealed_cave",
+				"x": 428,
+				"y": 434
+			}
+		],
+		"sections": [
+			{
+				"name": "Medical Herb 1",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+
+	{
+		"name": "Sealed Cave 5",
+		"access_rules": [
+			"$canAccessBrynmaer,$canBreakStoneWalls","windmill,$canBreakStoneWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_sealed_cave",
+				"x": 511,
+				"y": 288
+			}
+		],
+		"sections": [
+			{
+				"name": "Antidote",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+
+	{
+		"name": "Sealed Cave 6",
+		"access_rules": [
+			"$canAccessBrynmaer,$canBreakStoneWalls","windmill,$canBreakStoneWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_sealed_cave",
+				"x": 130,
+				"y": 205
+			}
+		],
+		"sections": [
+			{
+				"name": "Medical Herb 2",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Sealed Cave",
+		"access_rules": [
+			"windmill","$canAccessBrynmaer,$canBreakStoneWalls"
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "$sealed_cave_has_items" ],
+				"map": "map_full",
+				"x": 312,
+				"y": 983
+			}
+		],
+		"sections": [
+			{
+				"name": "Ball of Wind",
+				"visibility_rules": [ "flag_sk" ],
+                "item_count": 1
+			},
+			{
+				"name": "Vampire",
+				"visibility_rules": [ "flag_sk" ],
+				"access_rules": [ "$canBreakStoneWalls" ],
+                "item_count": 1
+			},
+			{
+				"name": "Warp Boots",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			},
+			{
+				"name": "Medical Herb 1",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			},
+			{
+				"name": "Antidote",
+				"visibility_rules": [ "flag_sc" ],
+				"access_rules": [ "$canBreakStoneWalls" ],
+                "item_count": 1
+			},
+			{
+				"name": "Medical Herb 2",
+				"visibility_rules": [ "flag_sc" ],
+				"access_rules": [ "$canBreakStoneWalls" ],
+                "item_count": 1
+			}
+		]
+	}
+]

@@ -1,0 +1,236 @@
+[
+// ---------- ITEMS ----------
+
+    // (Sc) Shuffle consumables
+    {
+      "name": "Flag Sc",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/Sc.png",
+      "codes": "flag_sc"
+    },
+
+    // (Sk) Shuffle key items
+    {
+      "name": "Flag Sk",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/Sk.png",
+      "codes": "flag_sk"
+    },
+
+    // (Sm) Shuffle magics
+    {
+      "name": "Flag Sm",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/Sm.png",
+      "codes": "flag_sm"
+    },
+
+    // (St) Shuffle traps
+    {
+      "name": "Flag St",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/St.png",
+      "codes": "flag_st"
+    },
+
+
+
+// ---------- WORLD ----------
+
+    // (Wt) Randomize trade-in items
+	{
+      "name": "Flag Wt",
+      "type": "toggle",
+	  "initial_active_state": false,
+      "loop": "true",
+      "img": "images/flags/Wt.png",
+      "codes": "flag_wt"
+    },
+
+
+
+// ---------- HARD MODE ----------
+
+    // (Hw) Battle magic not guaranteed
+	{
+      "name": "Flag Hw",
+      "type": "toggle",
+	  "initial_active_state": false,
+      "loop": "true",
+      "img": "images/flags/Hw.png",
+      "codes": "flag_hw"
+    },
+
+    // (Hb) Barrier not guaranteed
+	{
+      "name": "Flag Hb",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/Hb.png",
+      "codes": "flag_hb"
+    },
+
+    // (Hg) Gas mask not guaranteed
+	{
+      "name": "Flag Hg",
+      "type": "toggle",
+	  "initial_active_state": false,
+      "loop": "true",
+      "img": "images/flags/Hg.png",
+      "codes": "flag_hg"
+    },
+
+    // (Hs) Matching sword not guaranteed
+	{
+      "name": "Flag Hs",
+      "type": "toggle",
+	  "initial_active_state": false,
+      "loop": "true",
+      "img": "images/flags/Hs.png",
+      "codes": "flag_hs"
+    },
+
+
+
+// ---------- TWEAKS ----------
+
+    // (Tb) Buff bonus items
+	{
+      "name": "Flag Tb",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/Tb.png",
+      "codes": "flag_tb"
+    },
+
+// ---------- ROUTING ----------
+
+    // (Rt) Sword of Thunder teleports to Shyron
+	{
+      "name": "Flag Rt",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/Rt.png",
+      "codes": "flag_rt"
+    },
+
+    // (Rd) Require healing dolphin to return fog lamp
+	{
+      "name": "Flag Rd",
+      "type": "toggle",
+	  "initial_active_state": false,
+      "loop": "true",
+      "img": "images/flags/Rd.png",
+      "codes": "flag_rd"
+    },
+
+    // (Rp) Wind-waterfall passage
+	{
+      "name": "Flag Rp",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/Rp.png",
+      "codes": "flag_rp"
+    },
+
+    // (Rr) Deo requires telepathy
+	{
+      "name": "Flag Rr",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/Rr.png",
+      "codes": "flag_rr"
+    },
+
+    // (Ro) Orbs not required to break walls
+	{
+      "name": "Flag Ro",
+      "type": "toggle",
+	  "initial_active_state": false,
+      "loop": "true",
+      "img": "images/flags/Ro.png",
+      "codes": "flag_ro"
+    },
+
+
+
+// ---------- GLITCHES ----------
+
+    // (Gc) Sword charge glitch may be required
+	{
+      "name": "Flag Gc",
+      "type": "toggle",
+	  "initial_active_state": false,
+      "loop": "true",
+      "img": "images/flags/Gc.png",
+      "codes": "flag_gc"
+    },
+
+    // (Gf) Ghetto flight may be required
+	{
+      "name": "Flag Gf",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/Gf.png",
+      "codes": "flag_gf"
+    },
+
+    // (Gp) Teleport skip may be required
+	{
+      "name": "Flag Gp",
+      "type": "toggle",
+	  "initial_active_state": false,
+      "loop": "true",
+      "img": "images/flags/Gp.png",
+      "codes": "flag_gp"
+    },
+
+    // (Gr) Rabbit skip may be required
+	{
+      "name": "Flag Gr",
+      "type": "toggle",
+	  "initial_active_state": false,
+      "loop": "true",
+      "img": "images/flags/Gr.png",
+      "codes": "flag_gr"
+    },
+
+    // (Gt) Statue glitch may be required
+	{
+      "name": "Flag Gt",
+      "type": "toggle",
+	  "initial_active_state": true,
+      "loop": "true",
+      "img": "images/flags/Gt.png",
+      "codes": "flag_gt"
+    },
+
+
+
+// ---------- EASY MODE ----------
+
+    // (Er) Guarantee refresh
+	{
+      "name": "Flag Er",
+      "type": "toggle",
+	  "initial_active_state": false,
+      "loop": "true",
+      "img": "images/flags/Er.png",
+      "codes": "flag_er"
+    }
+	
+]

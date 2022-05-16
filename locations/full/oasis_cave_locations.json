@@ -1,0 +1,166 @@
+﻿[
+	{
+		"name": "Oasis Cave 1",
+		"access_rules": [
+			"$canAccessGoa"
+		],
+		"map_locations":[
+			{
+				"map": "map_oasis_cave",
+				"x": 165,
+				"y": 8
+			},
+			{
+				"map": "map_full",
+				"x": 970,
+				"y": 352
+			}
+		],
+		"sections": [
+			{
+				"name": "Leather Boots",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Oasis Cave 2",
+		"access_rules": [
+			"$canAccessGoa,$canCrossRivers,$canBreakIronWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_oasis_cave",
+				"x": 422,
+				"y": 222
+			}
+		],
+		"sections": [
+			{
+				"name": "Power Ring",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Oasis Cave 3",
+		"access_rules": [
+			"$canAccessGoa,flight"
+		],
+		"map_locations":[
+			{
+				"map": "map_oasis_cave",
+				"x": 372,
+				"y": 18
+			},
+			{
+				"map": "map_full",
+				"x": 970,
+				"y": 352
+			}
+		],
+		"sections": [
+			{
+				"name": "Battle Armor",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Oasis Cave 4",
+		"access_rules": [
+			"$canAccessGoa,$canCrossRivers"
+		],
+		"map_locations":[
+			{
+				"map": "map_oasis_cave",
+				"x": 240,
+				"y": 380
+			}
+		],
+		"sections": [
+			{
+				"name": "Fruit of Power 1",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Oasis Cave 5",
+		"access_rules": [
+			"$canAccessGoa,flight",
+			"$canAccessMado,$canKillMado",
+		],
+		"map_locations":[
+			{
+				"map": "map_oasis_cave",
+				"x": 24,
+				"y": 316
+			}
+		],
+		"sections": [
+			{
+				"name": "Fruit of Power 2",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Oasis Cave",
+		"access_rules": [
+			"$canAccessGoa"
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "$oasis_cave_has_items" ],
+				"map": "map_full",
+				"x": 970,
+				"y": 352
+			}
+		],
+		"sections": [
+			{
+				"name": "Leather Boots",
+				"visibility_rules": [ "flag_sk" ],
+                "item_count": 1
+			},
+			{
+				"name": "Power Ring",
+				"visibility_rules": [ "flag_sk,$oasis_cave_has_items" ],
+                "access_rules": [ "$canCrossRivers,$canBreakIronWalls" ],
+                "item_count": 1
+			},
+			{
+				"name": "Battle Armor",
+				"visibility_rules": [ "flag_sk" ],
+                "access_rules": [ "flight" ],
+				"item_count": 1
+			},
+			{
+				"name": "Fruit of Power 1",
+				"visibility_rules": [ "flag_sc" ],
+                "access_rules": [ "$canCrossRivers" ],
+                "item_count": 1
+			},
+			{
+				"name": "Fruit of Power 2",
+				"visibility_rules": [ "flag_sc" ],
+                "access_rules": [
+					"flight",
+					"$canAccessMado,$canKillMado"
+				],
+                "item_count": 1
+			}
+		]
+	}
+]

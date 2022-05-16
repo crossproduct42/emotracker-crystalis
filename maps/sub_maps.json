@@ -1,0 +1,90 @@
+﻿[
+	{
+		"name": "map_full",
+		"img": "maps/crystalis_map.png"
+	},
+
+	{
+		"name": "map_sealed_cave",
+		"img": "maps/sealed_cave.png",
+		"location_size": 36,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_sabre_west",
+		"img": "maps/sabre_west.png",
+		"location_size": 36,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_sabre_north",
+		"img": "maps/sabre_north.png",
+		"location_size": 36,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_fog_lamp_cave",
+		"img": "maps/fog_lamp_cave.png",
+		"location_size": 36,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_island_cave",
+		"img": "maps/island_cave.png",
+		"location_size": 32,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_island_fortress",
+		"img": "maps/island_fortress.png",
+		"location_size": 36,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_hydra",
+		"img": "maps/hydra.png",
+		"location_size": 32,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_oasis_cave",
+		"img": "maps/oasis_cave.png",
+		"location_size": 32,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_goa_1",
+		"img": "maps/goa_1.png",
+		"location_size": 32,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_goa_2",
+		"img": "maps/goa_2.png",
+		"location_size": 32,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_goa_3",
+		"img": "maps/goa_3.png",
+		"location_size": 32,
+		"location_border_thickness": 4
+	},
+
+	{
+		"name": "map_goa_4",
+		"img": "maps/goa_4.png",
+		"location_size": 32,
+		"location_border_thickness": 4
+	}
+]

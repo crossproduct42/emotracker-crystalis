@@ -1,0 +1,221 @@
+{
+	"weapons": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "wind",
+                "fire",
+                "water",
+                "thunder"
+            ],
+            [
+                "windball",
+                "fireball",
+                "waterball",
+                "thunderball"
+            ],
+            [
+                "tornado",
+                "flame",
+                "blizzard",
+                "storm"
+            ]
+		]
+	},
+
+	"worn_items": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "gas",
+                "power",
+                "warrior",
+                "iron"
+            ],
+            [
+                "deo",
+                "rabbit",
+                "speed",
+                "shield"
+            ]
+		]
+	},
+  
+	"magic": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "refresh",
+                "paralysis",
+                "telepathy",
+                "teleport"
+            ],
+            [
+                "recover",
+                "barrier",
+                "change",
+                "flight"
+            ]
+		]
+	},
+  
+	"bows": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "moon",
+                "sun",
+                "truth"
+            ]
+		]
+	},
+  
+	"event_items": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "windmill",
+                "prison",
+                "stxy"
+            ],
+            [
+                "insect",
+                "lime",
+                "shell"
+            ],
+            [
+                "onyx",
+                "broken",
+                "ivory"
+            ],
+            [
+                "fog",
+                "glowing",
+                "eyeglasses"
+            ],
+            [
+                "kirisa",
+                "love",
+				"psycho"
+            ]
+		]
+	},
+  
+	"garbage": {
+		"type": "itemgrid",
+        "h_alignment": "right",
+	    "background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "opel",
+                "repun",
+                "sacred"
+            ]
+		]
+	},
+  
+  "tracker_left": {
+    "type": "array",
+    "height": 364,
+    "orientation": "vertical",
+    "background": "#203040",
+    "style": "stack",
+    "content": [
+        {
+			"type": "layout",
+			"dropshadow": true,
+			"margin": 0,
+			"key": "weapons"
+        },
+        {
+			"type": "layout",
+			"dropshadow": true,
+			"margin": 0,
+			"key": "worn_items"
+        },
+        {
+			"type": "layout",
+			"dropshadow": true,
+			"margin": 0,
+			"key": "magic"
+        }                    
+    ]
+  },
+
+  "tracker_right": {
+    "type": "array",
+    "height": 364,
+    "orientation": "vertical",
+    "background": "#203040",
+    "style": "stack",
+    "content": [
+        {
+			"type": "layout",
+			"dropshadow": true,
+			"margin": 0,
+			"key": "bows"
+        },
+        {
+			"type": "layout",
+			"dropshadow": true,
+			"margin": 0,
+			"key": "event_items"
+        },
+        {
+			"type": "layout",
+			"dropshadow": true,
+			"margin": 0,
+			"key": "garbage"
+        }                    
+    ]
+  },
+
+  "tracker_default": {
+    "type": "array",
+    "height": 364,
+    "orientation": "horizontal",
+    "background": "#203040",
+    "style": "wrap",
+    "content": [
+        {
+			"type": "layout",
+			"dropshadow": false,
+			"margin": 0,
+			"key": "tracker_left"
+        },
+        {
+			"type": "layout",
+			"dropshadow": true,
+			"margin": 0,
+			"key": "tracker_right"
+        },
+        {
+            "type": "map",
+			"width": 412,
+			"dropshadow": true
+        }		
+    ]
+  }
+}

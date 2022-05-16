@@ -1,0 +1,137 @@
+﻿[
+	{
+		"name": "Fog Lamp Cave 1",
+		"access_rules": [
+			"$canAccessPortoa,$canCrossRivers,$canBreakStoneWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_fog_lamp_cave",
+				"x": 476,
+				"y": 64
+			},
+			{
+				"map": "map_full",
+				"x": 1664,
+				"y": 1176
+			}
+		],
+		"sections": [
+			{
+				"name": "Fog Lamp",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Fog Lamp Cave 2",
+		"access_rules": [
+			"$canAccessPortoa,$canCrossRivers,$canBreakStoneWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_fog_lamp_cave",
+				"x": 107,
+				"y": 18
+			},
+			{
+				"map": "map_full",
+				"x": 1664,
+				"y": 1176
+			}
+		],
+		"sections": [
+			{
+				"name": "Lysis Plant",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Fog Lamp Cave 3",
+		"access_rules": [
+			"$canAccessPortoa,$canCrossRivers,$canBreakStoneWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_fog_lamp_cave",
+				"x": 212,
+				"y": 186
+			},
+			{
+				"map": "map_full",
+				"x": 1664,
+				"y": 1176
+			}
+		],
+		"sections": [
+			{
+				"name": "Mimic 1",
+				"visibility_rules": [ "flag_st" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Fog Lamp Cave 4",
+		"access_rules": [
+			"$canAccessPortoa,$canCrossRivers,$canBreakStoneWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_fog_lamp_cave",
+				"x": 60,
+				"y": 330
+			}
+		],
+		"sections": [
+			{
+				"name": "Mimic 2",
+				"visibility_rules": [ "flag_st" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Fog Lamp Cave",
+		"access_rules": [
+			"$canAccessPortoa,$canCrossRivers,$canBreakStoneWalls"
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "$fog_lamp_cave_has_items" ],
+				"map": "map_full",
+				"x": 1664,
+				"y": 1176
+			}
+		],
+		"sections": [
+			{
+				"name": "Fog Lamp",
+				"visibility_rules": [ "flag_sk" ],
+                "item_count": 1
+			},
+			{
+				"name": "Lysis Plant",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			},
+			{
+				"name": "Mimic 1",
+				"visibility_rules": [ "flag_st" ],
+                "item_count": 1
+			},
+			{
+				"name": "Mimic 2",
+				"visibility_rules": [ "flag_st" ],
+                "item_count": 1
+			}
+		]
+	}
+]

@@ -1,0 +1,137 @@
+﻿[
+	{
+		"name": "Island Cave 1",
+		"access_rules": [
+			"$canAccessJoel,$canCrossRivers,$canBreakStoneWalls",
+		],
+		"map_locations":[
+			{
+				"map": "map_island_cave",
+				"x": 333,
+				"y": 262
+			},
+			{
+				"map": "map_full",
+				"x": 1622,
+				"y": 454
+			}
+		],
+		"sections": [
+			{
+				"name": "Iron Necklace",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Island Cave 2",
+		"access_rules": [
+			"$canAccessJoel,$canCrossRivers,$canBreakStoneWalls",
+		],
+		"map_locations":[
+			{
+				"map": "map_island_cave",
+				"x": 231,
+				"y": 64
+			},
+			{
+				"map": "map_full",
+				"x": 1622,
+				"y": 454
+			}
+		],
+		"sections": [
+			{
+				"name": "Magic Ring",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Island Cave 3",
+		"access_rules": [
+			"$canAccessJoel,$canCrossRivers,$canBreakStoneWalls",
+		],
+		"map_locations":[
+			{
+				"map": "map_island_cave",
+				"x": 550,
+				"y": 188
+			}
+		],
+		"sections": [
+			{
+				"name": "Lysis Plant",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Island Cave 4",
+		"access_rules": [
+			"$canAccessJoel,$canCrossRivers,$canBreakStoneWalls",
+		],
+		"map_locations":[
+			{
+				"map": "map_island_cave",
+				"x": 375,
+				"y": 262
+			},
+			{
+				"map": "map_full",
+				"x": 1622,
+				"y": 454
+			}
+		],
+		"sections": [
+			{
+				"name": "Mimic",
+				"visibility_rules": [ "flag_st" ],
+				"item_count": 1
+			}
+		]
+	},
+
+	{
+		"name": "Island Cave",
+		"access_rules": [
+			"$canAccessJoel,$canCrossRivers,$canBreakStoneWalls",
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "$island_cave_has_items" ],
+				"map": "map_full",
+				"x": 1622,
+				"y": 454
+			}
+		],
+		"sections": [
+			{
+				"name": "Iron Necklace",
+				"visibility_rules": [ "flag_sk" ],
+                "item_count": 1
+			},
+			{
+				"name": "Magic Ring",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			},
+			{
+				"name": "Lysis Plant",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			},
+			{
+				"name": "Mimic",
+				"visibility_rules": [ "flag_st" ],
+                "item_count": 1
+			}
+		]
+	}
+]

@@ -1,0 +1,106 @@
+[
+
+// Prog Togs for Swords
+// Don't use Custom Items unless it's a map/logic layout
+
+    // Sword of Wind
+    {
+		"name": "Sword of Wind",
+		"type": "progressive_toggle",
+		"img": "images/swords/wind.png",
+		"disabled_image_filter": "",
+		"loop": "true",
+		"codes": "wind",
+		"stages": [
+			{
+				"img": "images/swords/wind.png",
+				"disabled_img": "images/swords/wind_off.png",
+				"codes": "wind"
+			},
+			{
+				"img": "images/swords/wind2.png",
+				"disabled_img": "images/swords/wind_off2.png",
+				"codes": "wind,ballofwind,orbofwind,windball,windorb"
+			},
+			{
+				"img": "images/swords/wind3.png",
+				"disabled_img": "images/swords/wind_off3.png",
+			}
+		]
+	},
+
+    // Sword of Fire
+    {
+		"name": "Sword of Fire",
+		"type": "progressive_toggle",
+		"img": "images/swords/fire.png",
+		"disabled_image_filter": "",
+		"loop": "true",
+		"codes": "fire",
+		"stages": [
+			{
+				"img": "images/swords/fire.png",
+				"disabled_img": "images/swords/fire_off.png",
+				"codes": "fire"
+			},
+			{
+				"img": "images/swords/fire2.png",
+				"disabled_img": "images/swords/fire_off2.png",
+			},
+			{
+				"img": "images/swords/fire3.png",
+				"disabled_img": "images/swords/fire_off3.png",
+			}
+		]
+	},
+
+    // Sword of Water
+    {
+		"name": "Sword of Water",
+		"type": "progressive_toggle",
+		"img": "images/swords/water.png",
+		"disabled_image_filter": "",
+		"loop": "true",
+		"codes": "water",
+		"stages": [
+			{
+				"img": "images/swords/water.png",
+				"disabled_img": "images/swords/water_off.png",
+				"codes": "water"
+			},
+			{
+				"img": "images/swords/water2.png",
+				"disabled_img": "images/swords/water_off2.png",
+			},
+			{
+				"img": "images/swords/water3.png",
+				"disabled_img": "images/swords/water_off3.png",
+			}
+		]
+	},
+
+    // Sword of Thunder
+    {
+		"name": "Sword of Thunder",
+		"type": "progressive_toggle",
+		"img": "images/swords/thunder.png",
+		"disabled_image_filter": "",
+		"loop": "true",
+		"codes": "thunder",
+		"stages": [
+			{
+				"img": "images/swords/thunder.png",
+				"disabled_img": "images/swords/thunder_off.png",
+				"codes": "thunder"
+			},
+			{
+				"img": "images/swords/thunder2.png",
+				"disabled_img": "images/swords/thunder_off2.png",
+			},
+			{
+				"img": "images/swords/thunder3.png",
+				"disabled_img": "images/swords/thunder_off3.png",
+			}
+		]
+	}
+ ]

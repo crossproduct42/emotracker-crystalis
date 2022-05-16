@@ -1,0 +1,15 @@
+﻿{
+  "name": "Crystalis Randomizer (WIP)",
+  "game_name": "Crystalis Randomizer",
+  "package_version": "1.2.0",
+  "package_uid": "crystalis2_crossproduct",
+  "author": "crossproduct",
+  "variants": {
+    "items_only": {
+      "display_name": "Items Only"
+    },
+    "items_and_map_custom": {
+      "display_name": "Items / Map"
+    }
+  }
+}

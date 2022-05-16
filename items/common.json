@@ -1,0 +1,448 @@
+[
+
+// ---------- MAGIC ----------
+
+    // Refresh
+    {
+      "name": "Refresh",
+      "type": "toggle",
+      "img": "images/magic/refresh.png",
+      "loop": "true",
+      "codes": "refresh,ref"
+    },
+
+    // Paralysis
+    {
+      "name": "Paralysis",
+      "type": "toggle",
+      "img": "images/magic/paralysis.png",
+      "loop": "true",
+      "codes": "paralysis,para"
+    },
+
+    // Telepathy
+    {
+      "name": "Telepathy",
+      "type": "toggle",
+      "img": "images/magic/telepathy.png",
+      "loop": "true",
+      "codes": "telepathy,telepath"
+    },
+
+    // Teleport
+    {
+      "name": "Teleport",
+      "type": "toggle",
+      "img": "images/magic/teleport.png",
+      "loop": "true",
+      "codes": "teleport,tp,port"
+    },
+
+    // Recover
+    {
+      "name": "Recover",
+      "type": "toggle",
+      "img": "images/magic/recover.png",
+      "loop": "true",
+      "codes": "recover,rec"
+    },
+
+    // Barrier
+    {
+      "name": "Barrier",
+      "type": "toggle",
+      "img": "images/magic/barrier.png",
+      "loop": "true",
+      "codes": "barrier,bar"
+    },
+
+    // Change
+    {
+      "name": "Change",
+      "type": "toggle",
+      "img": "images/magic/change.png",
+      "loop": "true",
+      "codes": "change"
+    },
+
+    // Flight
+    {
+      "name": "Flight",
+      "type": "toggle",
+      "img": "images/magic/flight.png",
+      "loop": "true",
+      "codes": "flight,fly"
+    },
+
+
+
+// ---------- EQUIPMENT ----------
+
+    // Hazmat Suit (Gas Mask)
+    {
+      "name": "Hazmat Suit",
+      "type": "toggle",
+      "img": "images/hazmat.png",
+      "loop": "true",
+      "codes": "hazmat,hazmatsuit,gas,gasmask"
+    },
+
+    // Rabbit Boots
+    {
+      "name": "Rabbit Boots",
+      "type": "toggle",
+      "img": "images/rabbit.png",
+      "loop": "true",
+      "codes": "rabbit,rabbitboots"
+    },
+	
+    // Speed Boots (Leather Boots)
+    {
+      "name": "Speed Boots",
+      "type": "toggle",
+      "img": "images/speed.png",
+      "loop": "true",
+      "codes": "speed,leather,speedboots,leatherboots"
+    },
+
+    // Shield Ring
+    {
+      "name": "Shield Ring",
+      "type": "toggle",
+      "img": "images/shield.png",
+      "loop": "true",
+      "codes": "shield,shieldring"
+    },
+
+
+
+// ---------- BOWS ----------
+
+    // Bow of Moon
+    {
+      "name": "Bow of Moon",
+      "type": "toggle",
+      "img": "images/moon.png",
+      "loop": "true",
+      "codes": "moon,bowofmoon,moonbow"
+    },
+
+    // Bow of Sun
+    {
+      "name": "Bow of Sun",
+      "type": "toggle",
+      "img": "images/sun.png",
+      "loop": "true",
+      "codes": "sun,bowofsun,sunbow"
+    },
+
+    // Bow of Truth
+    {
+      "name": "Bow of Truth",
+      "type": "toggle",
+      "img": "images/truth.png",
+      "loop": "true",
+      "codes": "truth,bowoftruth,truthbow"
+    },
+
+
+
+// ---------- TRADE-INS ----------
+
+	// Statue of Onyx
+	{
+      "name": "Statue of Onyx",
+      "type": "progressive_toggle",
+      "stages": [
+        {
+          "img": "images/trade/onyx.png",
+          "codes": "onyx,statueofonyx",
+          "secondary_codes": "none"
+        },
+        {
+          "img": "images/trade/onyx_akahana.png",
+          "codes": "onyx,akahana,aka"
+        },
+        {
+          "img": "images/trade/onyx_boat.png",
+          "codes": "onyx,boat,ferry"
+        },
+        {
+          "img": "images/trade/onyx_kensu.png",
+          "codes": "onyx,kensu"
+        },
+        {
+          "img": "images/trade/onyx_queen.png",
+          "codes": "onyx,queen"
+        },
+        {
+          "img": "images/trade/onyx_blob.png",
+          "codes": "onyx,blob,nuper"
+        }
+      ]
+    },
+
+	// Fog Lamp
+	{
+      "name": "Fog Lamp",
+      "type": "progressive_toggle",
+      "stages": [
+        {
+          "img": "images/trade/fog.png",
+          "codes": "fog,foglamp",
+          "secondary_codes": "none"
+        },
+        {
+          "img": "images/trade/fog_akahana.png",
+          "codes": "fog,foglamp,akahana,aka"
+        },
+        {
+          "img": "images/trade/fog_boat.png",
+          "codes": "fog,foglamp,boat,ferry"
+        },
+        {
+          "img": "images/trade/fog_kensu.png",
+          "codes": "fog,foglamp,kensu"
+        },
+		{
+          "img": "images/trade/fog_queen.png",
+          "codes": "fog,foglamp,queen"
+        },
+        {
+          "img": "images/trade/fog_blob.png",
+          "codes": "fog,foglamp,blob,nuper"
+        }
+      ]
+    },
+
+	// Love Pendant
+	{
+      "name": "Love Pendant",
+      "type": "progressive_toggle",
+      "stages": [
+        {
+          "img": "images/trade/love.png",
+          "codes": "love,lovependant",
+          "secondary_codes": "none"
+        },
+        {
+          "img": "images/trade/love_akahana.png",
+          "codes": "love,lovependant,akahana,aka"
+        },
+        {
+          "img": "images/trade/love_boat.png",
+          "codes": "love,lovependant,boat,ferry"
+        },
+        {
+          "img": "images/trade/love_kensu.png",
+          "codes": "love,lovependant,kensu"
+        },
+        {
+          "img": "images/trade/love_queen.png",
+          "codes": "love,lovependant,queen"
+        },
+        {
+          "img": "images/trade/love_blob.png",
+          "codes": "love,lovependant,blob,nuper"
+        }
+      ]
+    },
+
+	// Kirisa Plant
+	{
+      "name": "Kirisa Plant",
+      "type": "progressive_toggle",
+      "stages": [
+        {
+          "img": "images/trade/kirisa.png",
+          "codes": "kirisa,kirisaplant",
+          "secondary_codes": "none"
+        },
+        {
+          "img": "images/trade/kirisa_akahana.png",
+          "codes": "kirisa,kirisaplant,akahana,aka"
+        },
+        {
+          "img": "images/trade/kirisa_boat.png",
+          "codes": "kirisa,kirisaplant,boat,ferry"
+        },
+        {
+          "img": "images/trade/kirisa_kensu.png",
+          "codes": "kirisa,kirisaplant,kensu"
+        },
+        {
+          "img": "images/trade/kirisa_queen.png",
+          "codes": "kirisa,kirisaplant,queen"
+        },
+        {
+          "img": "images/trade/kirisa_blob.png",
+          "codes": "kirisa,kirisaplant,blob,nuper"
+        }
+      ]
+    },
+
+	// Ivory Statue
+	{
+      "name": "Ivory Statue",
+      "type": "progressive_toggle",
+      "stages": [
+        {
+          "img": "images/trade/ivory.png",
+          "codes": "ivory,ivorystatue",
+          "secondary_codes": "none"
+        },
+        {
+          "img": "images/trade/ivory_akahana.png",
+          "codes": "ivory,ivorystatue,akahana,aka"
+        },
+        {
+          "img": "images/trade/ivory_boat.png",
+          "codes": "ivory,ivorystatue,boat,ferry"
+        },
+        {
+          "img": "images/trade/ivory_kensu.png",
+          "codes": "ivory,ivorystatue,kensu"
+        },
+        {
+          "img": "images/trade/ivory_queen.png",
+          "codes": "ivory,ivorystatue,queen"
+        },
+        {
+          "img": "images/trade/ivory_blob.png",
+          "codes": "ivory,ivorystatue,blob,nuper"
+        }
+      ]
+    },
+
+	// Tornel and Bracelet
+	{
+		"name": "Tornel Icon",
+		"type": "static",
+		"img": "images/tornel.png",
+		"codes": "tornel"
+    },
+
+	{
+		"name": "Tornel Bracelet",
+		"type": "progressive",
+		"loop": "true",
+		"allow_disabled": false,
+		"codes": "bracelet",
+		"stages": [
+			{
+				"img": "images/bracelet0.png",
+				"codes": "bracelet,unknown"
+			},
+			{
+				"img": "images/bracelet1.png",
+				"codes": "tornado"
+			},
+			{
+				"img": "images/bracelet2.png",
+				"codes": "flame"
+			},
+			{
+				"img": "images/bracelet3.png",
+				"codes": "blizzard"
+			},
+			{
+				"img": "images/bracelet4.png",
+				"codes": "storm"
+			}
+		]
+    },
+
+
+
+// ---------- EVENT ITEMS ----------
+
+    // Windmill Key
+    {
+      "name": "Windmill Key",
+      "type": "toggle",
+      "img": "images/windmill.png",
+      "loop": "true",
+      "codes": "windmill,mill,windmillkey"
+    },
+
+    // Key to Prison
+    {
+      "name": "Key to Prison",
+      "type": "toggle",
+      "img": "images/prison.png",
+      "loop": "true",
+      "codes": "prison,keytoprison,prisonkey"
+    },
+
+    // Key to Stxy
+    {
+      "name": "Key to Stxy",
+      "type": "toggle",
+      "img": "images/stxy.png",
+      "loop": "true",
+      "codes": "stxy,styx,keytostyx,keytostxy,styxkey,stxykey"
+    },
+
+    // Broken Statue
+    {
+      "name": "Broken Statue",
+      "type": "toggle",
+      "img": "images/broken.png",
+      "loop": "true",
+      "codes": "broken,brokenstatue"
+    },
+
+    // Glowing Lamp
+    {
+      "name": "Glowing Lamp",
+      "type": "toggle",
+      "img": "images/glowing.png",
+      "loop": "true",
+      "codes": "glowing,glow,glowinglamp"
+    },
+	
+    // Eyeglasses
+    {
+      "name": "Eyeglasses",
+      "type": "toggle",
+      "img": "images/eyeglasses.png",
+      "loop": "true",
+      "codes": "eyeglasses,eye,glasses,xray"
+    },
+
+    // Alarm Flute
+    {
+      "name": "Alarm Flute",
+      "type": "toggle",
+      "img": "images/alarm.png",
+      "loop": "true",
+      "codes": "alarm,alarmflute"
+    },
+
+    // Insect Flute
+    {
+      "name": "Insect Flute",
+      "type": "toggle",
+      "img": "images/insect.png",
+      "loop": "true",
+      "codes": "insect,insectflute"
+    },
+
+    // Flute of Lime
+    {
+      "name": "Flute of Lime",
+      "type": "toggle",
+      "img": "images/lime.png",
+      "loop": "true",
+      "codes": "lime,fluteoflime"
+    },
+
+    // Shell Flute
+    {
+      "name": "Shell Flute",
+      "type": "toggle",
+      "img": "images/shell.png",
+      "loop": "true",
+      "codes": "shell,shellflute"
+    }
+ ]

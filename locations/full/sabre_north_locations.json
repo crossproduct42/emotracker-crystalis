@@ -1,0 +1,140 @@
+﻿[
+	{
+		"name": "Mt Sabre North 1",
+		"access_rules": [
+			"$canAccessSabreNorth,$canBreakIceWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_sabre_north",
+				"x": 445,
+				"y": 125
+			},
+			{
+				"map": "map_full",
+				"x": 1018,
+				"y": 758
+			}
+		],
+		"sections": [
+			{
+				"name": "Key to Prison",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Mt Sabre North 2",
+		"access_rules": [
+			"$canAccessSabreNorth,$canBreakIceWalls,$canKillKelbesque",
+			"$canAccessSabreNorth,flight,$canKillKelbesque"
+		],
+		"map_locations":[
+			{
+				"map": "map_sabre_north",
+				"x": 158,
+				"y": 35
+			}
+		],
+		"sections": [
+			{
+				"name": "General Kelbesque",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Mt Sabre North 3",
+		"access_rules": [
+			"$canAccessSabreNorth,$canBreakIceWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_sabre_north",
+				"x": 190,
+				"y": 396
+			},
+			{
+				"map": "map_full",
+				"x": 1018,
+				"y": 758
+			}
+		],
+		"sections": [
+			{
+				"name": "Antidote",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Mt Sabre North 4",
+		"access_rules": [
+			"$canAccessSabreNorth,$canBreakIceWalls"
+		],
+		"map_locations":[
+			{
+				"map": "map_sabre_north",
+				"x": 635,
+				"y": 496
+			}
+		],
+		"sections": [
+			{
+				"name": "Medical Herb",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Mt Sabre North",
+		"access_rules": [
+			"$canAccessSabreNorth"
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "$sabre_north_has_items" ],
+				"map": "map_full",
+				"x": 1018,
+				"y": 758
+			}
+		],
+		"sections": [
+			{
+				"name": "Key to Prison",
+				"visibility_rules": [ "flag_sk" ],
+    			"access_rules": [ "$canBreakIceWalls" ],
+                "item_count": 1
+			},
+			{
+				"name": "General Kelbesque",
+				"visibility_rules": [ "flag_sk" ],
+    			"access_rules": [
+					"$canBreakIceWalls,$canKillKelbesque",
+					"flight,$canKillKelbesque",
+				],
+                "item_count": 1
+			},
+			{
+				"name": "Antidote",
+				"visibility_rules": [ "flag_sc" ],
+    			"access_rules": [ "$canBreakIceWalls" ],
+                "item_count": 1
+			},
+			{
+				"name": "Medical Herb",
+				"visibility_rules": [ "flag_sc" ],
+    			"access_rules": [ "$canBreakIceWalls" ],
+                "item_count": 1
+			}
+		]
+	}
+]

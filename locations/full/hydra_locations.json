@@ -1,0 +1,157 @@
+﻿[
+	{
+		"name": "Mt Hydra 1",
+		"access_rules": [ "$canAccessGoa,flight,$canBreakStoneWalls" ],
+		"map_locations":[
+			{
+				"map": "map_hydra",
+				"x": 147,
+				"y": 68
+			},
+			{
+				"map": "map_full",
+				"x": 104,
+				"y": 76
+			}
+		],
+		"sections": [
+			{
+				"visibility_rules": [ "flag_sk" ],
+				"name": "Bow of Sun",
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Mt Hydra 2",
+		"access_rules": [ "$canAccessGoa" ],
+		"map_locations":[
+			{
+				"map": "map_hydra",
+				"x": 375,
+				"y": 228
+			},
+			{
+				"map": "map_full",
+				"x": 104,
+				"y": 76
+			}
+		],
+		"sections": [
+			{
+				"visibility_rules": [ "flag_sc" ],
+				"name": "Fruit of Lime",
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Mt Hydra 3",
+		"access_rules": [ "$canAccessGoa,$canCrossRivers,$canBreakStoneWalls" ],
+		"map_locations":[
+			{
+				"map": "map_hydra",
+				"x": 544,
+				"y": 4
+			}
+		],
+		"sections": [
+			{
+				"visibility_rules": [ "flag_sc" ],
+				"name": "Magic Ring",
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Mt Hydra 4",
+		"access_rules": [ "$canAccessGoa,$canCrossRivers" ],
+		"map_locations":[
+			{
+				"map": "map_hydra",
+				"x": 284,
+				"y": 73
+			}
+		],
+		"sections": [
+			{
+				"visibility_rules": [ "flag_sc" ],
+				"name": "Medical Herb",
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Mt Hydra 5",
+		"access_rules": [ "$canAccessGoa,$canCrossRivers,$canBreakStoneWalls" ],
+		"map_locations":[
+			{
+				"map": "map_hydra",
+				"x": 247,
+				"y": 8
+			},
+			{
+				"map": "map_full",
+				"x": 104,
+				"y": 76
+			}
+		],
+		"sections": [
+			{
+				"visibility_rules": [ "flag_st" ],
+				"name": "Mimic",
+				"item_count": 1
+			}
+		]
+	},
+
+	{
+		"name": "Mt Hydra",
+		"access_rules": [
+			"$canAccessGoa"
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "$hydra_has_items" ],
+				"map": "map_full",
+				"x": 104,
+				"y": 76
+			}
+		],
+		"sections": [
+			{
+				"name": "Bow of Sun",
+				"visibility_rules": [ "flag_sk" ],
+				"access_rules": [ "$canBreakStoneWalls,flight" ],
+                "item_count": 1
+			},
+			{
+				"name": "Fruit of Lime",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			},
+			{
+				"name": "Magic Ring",
+				"visibility_rules": [ "flag_sc" ],
+				"access_rules": [ "$canCrossRivers,$canBreakStoneWalls" ],
+                "item_count": 1
+			},
+			{
+				"name": "Medical Herb",
+				"visibility_rules": [ "flag_sc" ],
+				"access_rules": [ "$canCrossRivers" ],
+                "item_count": 1
+			},
+			{
+				"name": "Mimic",
+				"visibility_rules": [ "flag_st" ],
+				"access_rules": [ "$canCrossRivers,$canBreakStoneWalls" ],
+                "item_count": 1
+			}
+		]
+	}
+]

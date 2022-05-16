@@ -1,0 +1,586 @@
+{
+	"weapons": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "wind",
+                "fire",
+                "water",
+                "thunder"
+            ]
+		]
+	},
+
+	"npcs": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "tornel",
+                "bracelet"
+            ]
+		]
+	},
+
+	"worn_items": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "gas",
+                "rabbit"
+            ],
+            [
+                "speed",
+                "shield"
+            ]
+		]
+	},
+  
+	"magic": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "refresh",
+                "paralysis",
+                "telepathy",
+                "teleport"
+            ],
+            [
+                "recover",
+                "barrier",
+                "change",
+                "flight"
+            ]
+		]
+	},
+  
+	"bows": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "moon"
+            ],
+            [
+                "sun"
+            ]
+		]
+	},
+  
+	"bow_of_truth": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "truth"
+            ]
+		]
+	},
+  
+  
+  
+	"event_items": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "windmill",
+                "prison",
+                "stxy",
+                "broken",
+                "glowing"
+            ],
+            [
+                "xray",
+                "alarm",
+                "insect",
+                "lime",
+                "shell"
+            ]
+		]
+	},
+
+	"trade_items": {
+		"type": "itemgrid",
+        "h_alignment": "center",
+		"background": "#203040",
+		"item_size": 40,
+        "item_margin": "4,4",
+        "rows": [
+            [
+                "onyx",
+                "fog",
+                "love",
+                "kirisa",
+                "ivory"
+            ]
+		]
+	},
+
+
+
+	// Top Row (swords, NPCs)
+	"tracker_top": {
+		"type": "array",
+		"orientation": "horizontal",
+		"background": "#203040",
+		"style": "stack",
+		"content": [
+			{
+				"type": "layout",
+				"dropshadow": true,
+				"margin": 0,
+				"key": "weapons"
+			},
+			{
+				"type": "layout",
+				"dropshadow": true,
+				"margin": 0,
+				"key": "npcs"
+			}
+		]
+	},
+	
+	
+	
+	// Middle Row (Magic, Equipment)
+	"tracker_middle": {
+		"type": "array",
+		"orientation": "horizontal",
+		"background": "#203040",
+		"style": "stack",
+		"content": [
+			{
+				"type": "layout",
+				"dropshadow": true,
+				"margin": 0,
+				"key": "magic"
+			},
+			{
+				"type": "layout",
+				"dropshadow": true,
+				"margin": 0,
+				"key": "worn_items"
+			}
+		]
+	},
+	
+
+
+	// Bottom Row (Bows, everything else)
+	"tracker_bottom": {
+		"type": "array",
+		"orientation": "horizontal",
+		"background": "#203040",
+		"style": "stack",
+		"content": [
+			{
+				"type": "layout",
+				"dropshadow": true,
+				"margin": 0,
+				"key": "bows"
+			},
+			{
+				"type": "layout",
+				"dropshadow": true,
+				"margin": 0,
+				"key": "event_items"
+			}
+		]
+	},
+	
+	
+
+	// Bottom Row 2 (Bow, Trade items)
+	"tracker_bottom2": {
+		"type": "array",
+		"orientation": "horizontal",
+		"background": "#203040",
+		"style": "stack",
+		"content": [
+			{
+				"type": "layout",
+				"dropshadow": true,
+				"margin": 0,
+				"key": "bow_of_truth"
+			},
+			{
+				"type": "layout",
+				"dropshadow": true,
+				"margin": 0,
+				"key": "trade_items"
+			}
+		]
+	},
+	
+
+
+	// Full item tracker
+	"tracker_full": {
+		"type": "array",
+		"width": 308,
+		"orientation": "vertical",
+		"background": "#203040",
+		"style": "stack",
+		"content": [
+			{
+				"type": "layout",
+				"margin": 0,
+				"key": "tracker_top"
+			},
+			{
+				"type": "layout",
+				"margin": 0,
+				"key": "tracker_middle"
+			},
+			{
+				"type": "layout",
+				"margin": 0,
+				"key": "tracker_bottom"
+			},
+			{
+				"type": "layout",
+				"margin": 0,
+				"key": "tracker_bottom2"
+			}
+		]
+	},
+	
+	
+	
+	// Flags
+	"flags": {
+		"type": "itemgrid",
+		"width": 308,
+		"item_width": 54,
+		"item_height": 27,
+		"item_margin": "2,12",
+		"v_alignment": "center",
+		"dropshadow": false,
+		"margin": 0,
+		"rows": [
+			[
+				"flag_sk",
+				"flag_sm",
+				"flag_sc",
+				"flag_st"
+			],
+			[
+				"flag_hw",
+				"flag_hb",
+				"flag_hg",
+				"flag_hs"
+			],
+			[
+				"flag_rt",
+				"flag_rd",
+				"flag_rp",
+				"flag_rr",
+				"flag_ro"
+			],
+			[
+				"flag_gc",
+				"flag_gf",
+				"flag_gp",
+				"flag_gr",
+				"flag_gt"
+			],
+			[
+				"flag_wt",
+				"flag_tb",
+				"flag_er"
+			]
+		]
+	},
+
+
+
+	"left_tabs": {
+		"type": "tabbed",
+			"tabs": [
+				{
+					"title": "Items",
+					"content":
+						{
+							"type": "layout",
+							"dropshadow": false,
+							"margin": 0,
+							"key": "tracker_full"
+						}
+				},
+				{
+					"title": "Flags",
+					"content":
+						{
+							"type": "layout",
+							"dropshadow": false,
+							"margin": 0,
+							"key": "flags"
+						}
+				}
+			]
+	},
+	
+
+
+	// Maps
+	"map_full": {
+			"type": "tabbed",
+			"width": 350,
+			"tabs": [
+				{
+					"title": "World Map",
+					"content": {
+						"type": "map",
+						"dropshadow": true,
+						"v_alignment": "center",
+						"maps": [
+							"map_full"
+						]
+					},
+				},
+				{
+					"title": "Caves",
+					"content": {
+						"type": "tabbed",
+						"tabs": [
+							{
+								"title": "Sealed",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_sealed_cave"
+									]
+								}
+							},
+							{
+								"title": "Fog Lamp",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_fog_lamp_cave"
+									]
+								}
+							},
+							{
+								"title": "Oasis",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_oasis_cave"
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"title": "Mountains",
+					"content": {
+						"type": "tabbed",
+						"tabs": [
+							{
+								"title": "Sabre West",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_sabre_west"
+									]
+								}
+							},
+							{
+								"title": "Sabre North",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_sabre_north"
+									]
+								}
+							},
+							{
+								"title": "Mt Hydra",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_hydra"
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"title": "Island",
+					"content": {
+						"type": "tabbed",
+						"tabs": [
+							{
+								"title": "Cave",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_island_cave"
+									]
+								}
+							},
+							{
+								"title": "Fortress",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_island_fortress"
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"title": "Goa",
+					"content": {
+						"type": "tabbed",
+						"tabs": [
+							{
+								"title": "1st",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_goa_1"
+									]
+								}
+							},
+							{
+								"title": "2nd",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_goa_2"
+									]
+								}
+							},
+							{
+								"title": "3rd",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_goa_3"
+									]
+								}
+							},
+							{
+								"title": "4th",
+								"content": {
+									"type": "map",
+									"dropshadow": true,
+									"v_alignment": "center",
+									"maps": [
+										"map_goa_4"
+									]
+								}
+							}
+						]
+					}
+				}
+			]
+	},
+
+
+
+
+
+
+	// Full ITEMS and MAP tracker
+	"tracker_default": {
+		"width": 662,
+		"height": 360,
+		"type": "array",
+		"orientation": "horizontal",
+		"background": "#203040",
+		"style": "stack",
+		"content": [
+			{
+				"type": "layout",
+				"margin": 0,
+				"key": "left_tabs"
+			},
+			{
+				"type": "layout",
+				"margin": 0,
+				"key": "map_full"
+			}			
+		]
+	},
+
+  "tracker_defaultssssss": {
+    "type": "array",
+    "height": 396,
+    "orientation": "horizontal",
+    "background": "#203040",
+    "style": "wrap",
+    "content": [
+		{
+			"type": "tabbed",
+			"width": 358,
+			"tabs": [
+				{
+					"title": "Items",
+					"content":
+						{
+							"type": "layout",
+							"dropshadow": false,
+							"margin": 0,
+							"key": "tracker_full"
+						}
+				}
+			]
+		}
+
+    ]
+  }
+}

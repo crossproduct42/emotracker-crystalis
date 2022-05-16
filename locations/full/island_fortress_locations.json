@@ -1,0 +1,133 @@
+﻿[
+	{
+		"name": "Island Fortress 1",
+		"access_rules": [
+			"$canAccessJoel,$canCrossRivers,$canBreakStoneWalls",
+		],
+		"map_locations":[
+			{
+				"map": "map_island_fortress",
+				"x": 290,
+				"y": 260
+			},
+			{
+				"map": "map_full",
+				"x": 1628,
+				"y": 54
+			}
+		],
+		"sections": [
+			{
+				"name": "Vampire 2",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+
+	{
+		"name": "Island Fortress 2",
+		"access_rules": [
+			"$canAccessJoel,$canCrossRivers,$canBreakStoneWalls,$canKillSabera",
+		],
+		"map_locations":[
+			{
+				"map": "map_island_fortress",
+				"x": 225,
+				"y": 103
+			}
+		],
+		"sections": [
+			{
+				"name": "Sabera",
+				"visibility_rules": [ "flag_sk" ],
+				"item_count": 1
+			}
+		]
+	},
+
+	{
+		"name": "Island Fortress 3",
+		"access_rules": [
+			"$canAccessJoel,$canCrossRivers,$canBreakStoneWalls",
+		],
+		"map_locations":[
+			{
+				"map": "map_island_fortress",
+				"x": 142,
+				"y": 20
+			},
+			{
+				"map": "map_full",
+				"x": 1628,
+				"y": 54
+			}
+		],
+		"sections": [
+			{
+				"name": "Fruit of Power",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+
+	{
+		"name": "Island Fortress 4",
+		"access_rules": [
+			"$canAccessJoel,$canCrossRivers,$canBreakStoneWalls",
+		],
+		"map_locations":[
+			{
+				"map": "map_island_fortress",
+				"x": 480,
+				"y": 38
+			}
+		],
+		"sections": [
+			{
+				"name": "Medical Herb",
+				"visibility_rules": [ "flag_sc" ],
+				"item_count": 1
+			}
+		]
+	},
+	
+	{
+		"name": "Island Fortress",
+		"access_rules": [
+			"$canAccessJoel,$canCrossRivers,$canBreakStoneWalls",
+		],
+		"map_locations": [
+			{
+				"visibility_rules": [ "$island_fortress_has_items" ],
+				"map": "map_full",
+				"x": 1628,
+				"y": 54
+			}
+		],
+		"sections": [
+			{
+				"name": "Vampire 2",
+				"visibility_rules": [ "flag_sk" ],
+                "item_count": 1
+			},
+			{
+				"name": "Sabera",
+				"visibility_rules": [ "flag_sk" ],
+				"access_rules": [ "$canKillSabera" ],
+                "item_count": 1
+			},
+			{
+				"name": "Fruit of Power",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			},
+			{
+				"name": "Medical Herb",
+				"visibility_rules": [ "flag_sc" ],
+                "item_count": 1
+			}
+		]
+	}
+]
